@@ -1,5 +1,5 @@
 [GENERAL]
-inputfile=/tmp2/b02902052/creditcard.csv
+inputfile=/tmp2/b02902037/creditcard.csv
 
 [VALIDATE]
 # The ratio of class=1. Number of class=0 will be equal to class=1.

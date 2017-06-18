@@ -11,6 +11,7 @@ from ast import literal_eval
 import sampler
 import configparser
 import classifier
+import pySMOTE
 
 def main(config):
     # read data

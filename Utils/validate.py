@@ -18,3 +18,13 @@ def print_truth_table(table):
     print('===========================')
     print('True  =     {0}      {1}'.format(table[11], table[10]))
     print('False =     {0}      {1}'.format(table[1], table[0]))
+
+def f1_score(table):
+    TP = table[11]
+    FP = table[10]
+    FN = table[1]
+    TN = table[0]
+    Precision = TP / (TP+FP)
+    Recall = TP / (TP+FN)
+    return (2*Precision*Recall) / (Precision+Recall)
+

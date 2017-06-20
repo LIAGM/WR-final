@@ -9,7 +9,7 @@ class ADASYNImlearn(BaseSampler):
         self.config = self._Parameters(config)
 
     def fit_sample(self, X, y):
-        ada = ADASYN(kind=self.config.kind)
+        ada = ADASYN()
         return ada.fit_sample(X, y)
 
     class _Parameters:

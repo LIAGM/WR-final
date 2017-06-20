@@ -11,7 +11,6 @@ from ast import literal_eval
 import sampler
 import configparser
 import classifier
-import pySMOTE
 
 def main(config):
     # read data
@@ -38,7 +37,8 @@ def main(config):
     truth_table = Utils.truth_table(val_y, result_y)
     print('Correction:{0}'.format(correction))
     Utils.print_truth_table(truth_table)
-
+    f1_score = Utils.f1_score(truth_table)
+    print('F1 Score:{0}'.format(f1_score))
 
 if __name__ == '__main__':
     # parse arguments
